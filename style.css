@@ -1,4 +1,4 @@
-/* Basis-Stile für zentriertes Layout */
+/* Basic styles for centered layout */
 * {
     padding: 0;
     margin: 0;
@@ -13,31 +13,31 @@ body {
     background-color: cyan;
 }
 
-/* Uhr-Styling */
+/* Clock styling */
 .clock {
-    width: 60vmin; /* responsive Größe, 60% der kleineren Viewport-Seite */
-    height: 60vmin; /* responsive Größe, 60% der kleineren Viewport-Seite */
+    width: 60vmin; /* responsive size, 60% of the smaller viewport side */
+    height: 60vmin; /* responsive size, 60% of the smaller viewport side */
     max-width: 500px;
     max-height: 500px;
     position: relative;
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0.9, 0.9);
-    border: 5px solid #333; /* Rand für das Ziffernblatt */
+    border: 5px solid #333; /* Border for the clock face */
 }
 
 .digital-clock {
     position: absolute;
+    z-index: 50;
     top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5em;
     color: #333;
     font-weight: bold;
-  }
-  
+}
 
-/* Markierungen für Stunden */
+/* Hour markings */
 .marking {
     position: absolute;
     width: 10px;
@@ -53,17 +53,20 @@ body {
 
 .dot {
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 2%;
+    height: 2%;
     background-color: black;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* Positionen der Punkte */
+/* Dot positions */
 .center-position {
     top: 50%;
     left: 50%;
+    width: 4%;
+    height: 4%;
+    z-index: 100;
 }
 
 .five-position {
@@ -98,7 +101,7 @@ body {
 
 .fifty-position {
     top: 31%;
-    right: 83%;
+    right: 82%;
 }
 
 .fiftyfive-position {
@@ -106,9 +109,10 @@ body {
     right: 68%;
 }
 
-/* Innerer Bereich der Uhr für Markierungen */
+/* Inner clock face for markings */
 .inner-clock-face {
     position: absolute;
+    z-index: 100;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -117,13 +121,14 @@ body {
     border-radius: 50%;
 }
 
-/* Zeiger-Styling */
+/* Hand styling */
 .hand {
     position: absolute;
+    z-index: 200;
     top: 50%;
     left: 50%;
-    transform-origin: left center; /* Drehpunkt links */
-    transform: rotate(-90deg); /* Start bei 12 Uhr */
+    transform-origin: left center; /* Pivot point on the left */
+    transform: rotate(-90deg); /* Start at 12 o'clock */
     border-radius: 10px;
     background-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
@@ -131,7 +136,7 @@ body {
 
 .hour-hand {
     width: 20%;
-    height: 7px;
+    height: 6px;
     background-color: #333;
 }
 
@@ -147,7 +152,7 @@ body {
     background-color: red;
 }
 
-/* Zusätzliche Markierungen (z.B. für jede Stunde) */
+/* Additional markings (e.g., for every hour) */
 @keyframes spin {
     0% {
         transform: rotate(0deg);
@@ -157,6 +162,7 @@ body {
     }
 }
 
+/* Responsive styling for smaller screen sizes */
 @media (max-width: 768px) {
     .clock {
         width: 50vmin;

@@ -1,5 +1,13 @@
 # Analoge_Uhr
-Ich habe eine Analoge Uhr mit JS und CSS erstellt, die HTML Datei war vorgegeben und durfte nicht geändert werden.
+
+## Auftrag
+Wir mussten eine Analoge Uhr mit JS und CSS erstellen, die HTML Datei war vorgegeben und durfte nicht geändert werden.
+
+## Vorgehen
+Als erstes habe ich die Kriterien und den Auftrag genau durch gelesen.
+Als zweites probierte ich die Zeiger funktionierend zu machen.
+Und die meiste Zeit habe ich probiert noch Punke als Ziffernblatt hinzu zu fügen und noch eine Digitale Uhr zu machen.
+
 | **Anforderung**                                                   | **Erfüllt** (Punkte) | **Teilweise erfüllt** (Punkte) | **Nicht erfüllt** (Punkte) |
 |--------------------------------------------------------------------|----------------------|---------------------------------|----------------------------|
 | Die Uhr hat drei Zeiger und zeigt die aktuelle Zeit korrekt an     | 5 Punkte            | 2 Punkte                        | 0 Punkte                   |
