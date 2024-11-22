@@ -4,9 +4,9 @@
 Wir mussten eine Analoge Uhr mit JS und CSS erstellen, die HTML Datei war vorgegeben und durfte nicht geändert werden.
 
 ## Vorgehen
-Als erstes habe ich die Kriterien und den Auftrag genau durch gelesen.
-Als zweites probierte ich die Zeiger funktionierend zu machen.
-Und die meiste Zeit habe ich probiert noch Punke als Ziffernblatt hinzu zu fügen und noch eine Digitale Uhr zu machen.
+-Als erstes habe ich die Kriterien und den Auftrag genau durch gelesen.
+-Als zweites probierte ich die Zeiger funktionierend zu machen.
+-Und die meiste Zeit habe ich probiert noch Punke als Ziffernblatt hinzu zu fügen und noch eine Digitale Uhr zu machen.
 
 | **Anforderung**                                                   | **Erfüllt** (Punkte) | **Teilweise erfüllt** (Punkte) | **Nicht erfüllt** (Punkte) |
 |--------------------------------------------------------------------|----------------------|---------------------------------|----------------------------|
