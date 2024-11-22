@@ -22,9 +22,20 @@ body {
     position: relative;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0.9, 0.9);
     border: 5px solid #333; /* Rand für das Ziffernblatt */
 }
+
+.digital-clock {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: #333;
+    font-weight: bold;
+  }
+  
 
 /* Markierungen für Stunden */
 .marking {
