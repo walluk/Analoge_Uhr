@@ -1,0 +1,154 @@
+/* Basis-Stile für zentriertes Layout */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cyan;
+}
+
+/* Uhr-Styling */
+.clock {
+    width: 60vmin; /* responsive Größe, 60% der kleineren Viewport-Seite */
+    height: 60vmin; /* responsive Größe, 60% der kleineren Viewport-Seite */
+    max-width: 500px;
+    max-height: 500px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 5px solid #333; /* Rand für das Ziffernblatt */
+}
+
+/* Markierungen für Stunden */
+.marking {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.marking-one { top: 10%; left: 50%; transform: translateX(-50%); }
+.marking-two { top: 50%; right: 10%; transform: translateY(-50%); }
+.marking-three { bottom: 10%; left: 50%; transform: translateX(-50%); }
+.marking-four { top: 50%; left: 10%; transform: translateY(-50%); }
+
+.dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Positionen der Punkte */
+.center-position {
+    top: 50%;
+    left: 50%;
+}
+
+.five-position {
+    top: 16%;
+    left: 71%;
+}
+
+.ten-position {
+    top: 31%;
+    left: 85%;
+}
+
+.twenty-position {
+    bottom: 28%;
+    left: 83%;
+}
+
+.twentyfive-position {
+    bottom: 14%;
+    left: 69%;
+}
+
+.thirtyfive-position {
+    bottom: 14%;
+    right: 68%;
+}
+
+.forty-position {
+    bottom: 28%;
+    right: 82%;
+}
+
+.fifty-position {
+    top: 31%;
+    right: 83%;
+}
+
+.fiftyfive-position {
+    top: 15%;
+    right: 68%;
+}
+
+/* Innerer Bereich der Uhr für Markierungen */
+.inner-clock-face {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+}
+
+/* Zeiger-Styling */
+.hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left center; /* Drehpunkt links */
+    transform: rotate(-90deg); /* Start bei 12 Uhr */
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hour-hand {
+    width: 20%;
+    height: 7px;
+    background-color: #333;
+}
+
+.min-hand {
+    width: 30%;
+    height: 5px;
+    background-color: #666;
+}
+
+.second-hand {
+    width: 40%;
+    height: 3px;
+    background-color: red;
+}
+
+/* Zusätzliche Markierungen (z.B. für jede Stunde) */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .clock {
+        width: 50vmin;
+        height: 50vmin;
+    }
+}
